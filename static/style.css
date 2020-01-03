@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin:0;
+  background-color: white;
+  cursor: default;
+}
+h1{
+  font: 100 30px/40px 'Raleway', sans-serif;
+  font-stretch: expanded;
+  text-align: center;
+  letter-spacing: 3px;
+  margin:0 0 25px 0;
+}
+h2{
+  font: italic 20px/24px georgia, serif;
+  text-align: center;
+  margin:0 0 50px 0;
+  /* margin-bottom: 50px; */
+}
+p {
+    display: block;
+    width: 100%;
+    font:100 15px/20px 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    text-transform: none;
+    text-align: justify;
+}
+p.big {
+  font:100 22px/32px 'Big Shoulders Text';
+  letter-spacing: 1px;
+}
+p.middle {
+
+}
+p.small {
+
+}
+
+/* MENU______________________________________________________________________ */
+#menu{
+  z-index: 100;
+  position: fixed; left: 0; top:0;
+  width: 100vw;
+  background-color: black;
+  text-align: center;
+  vertical-align: middle;
+}
+.menuDiv {
+  padding: 15px; padding-bottom: 8px; padding-left: 30px; padding-right: 30px;
+  display: inline-block;
+  line-height: 25px;
+  color: white;
+  height: 100%;
+  font-size: 15px;
+}
+.menuDiv:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+/* _________________________________________________________________MENU */
+
+/* ________________________________________________________________PAGE */
+.page{
+  position: absolute; top:0; left: 0;
+  width: 100vw; height: 100vh;
+  overflow-x: hidden; overflow-y: auto;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  perspective: 1px;
+  transform-style: preserve-3d;
+}
+.page::-webkit-scrollbar { width: 0 !important }
+
+#themeImageDiv {
+  transform: translateZ(-1px) scale(2);
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  left: 0px; top:0;
+}
+
+.mainStoryImg {
+  max-width: 100%;
+  height: auto;
+}
+#mainStoryInfo {
+  display: block;
+  padding: 30px;
+  position: relative;
+  top: -350px; margin-bottom:0;
+
+  text-align: center;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+}
+.mainStoryName {
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+  font: 700 36px/38px 'Open Sans Condensed', helvetica, sans-serif;
+  letter-spacing: 6px;
+}
+.mainStoryLocation {
+  font: italic 20px/24px georgia, serif;
+  margin-bottom: 20px;
+}
+.mainStoryBTN {
+  font: 600 20px/35px "proxima-nova", helvetica, sans-serif;
+  letter-spacing: 3px;
+  border: 3px solid #fff;
+  background: rgba(0,0,0,0.6);
+  width: 124px; height: 35px;
+  margin-left: auto; margin-right: auto;
+}
+.mainStoryBTN:hover {
+  background: black;
+  border: 3px solid lightgray;
+  cursor: pointer;
+}
+
+
+#mainPageContent {
+  font-size: 0;
+  position: absolute;
+  padding-top: 50px;
+  left:0; top: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  align-content: center;
+}
+.WebTheme, .storyGroupDiv{
+  max-width: 1234px;
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+}
+.WebTheme {
+  width: 60%;
+  min-width: 700px;
+}
+
+
+.storyDiv{
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.storyDiv:hover {
+  background-color: rgba(0,0,0,0.08);
+}
+.storyImgDiv {
+  padding: 20px;
+}
+.storyImgDiv img{
+  max-width: 100%;
+  height: auto;
+}
+.storyName, .storyLocation, .storyDate, .storyMembers{
+  display: block;
+  padding: 0 20px 0 20px;
+}
+.storyName{
+  position: relative; top:-70px;
+  margin: 0 20px -50px 20px;
+  background-color: rgba(0,0,0,0.4);
+  color: white;
+  font: italic 18px/50px georgia, serif;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.storyLocation, .storyDate, .storyMembers {
+  font: 15px/25px 'lato', serif;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+.storyLocation{
+}
+.storyDate{
+}
+.storyMembers{
+}
+
+/* _____________________________________________________________PAGE */
+
+
+/* ARTICLE*/
+.articleDiv {
+
+  width: 80%;
+  max-width: 1234px;
+  min-width: 700px;
+  box-sizing: border-box;
+  margin: 0 auto 0 auto;
+}
+
+.articleBig, .articleMiddle {
+  display: inline-block;
+  /* padding: 20px; */
+  white-space: normal;
+  vertical-align: top;
+}
+.articleBig {
+  width: 35%;
+}
+.articleMiddle{
+  width: 65%
+}
+.articleSpan {
+  padding: 30px;
+}
+
+.articleImgDiv {
+  padding: 10px;
+}
+.articleImgDiv img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+/*_____________________________ARTICLE */
+
+/* FOOTER____________________________________________________________________ */
+.footer{
+  padding: 10px;
+  display: block;
+  width: 100%;
+  background-color: black; color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font: 600 12px/12px "proxima-nova", sans-serif;
+}
+.footerLinks {
+  display: block;
+  width: 100%;
+}
+.footerDiv {
+  margin: 10px; margin-left: auto; margin-right: auto;
+  display: block;
+  width: fit-content;
+  width: 150px; height: 20px;
+}
+.footerDiv:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+.footerDivIMG, .footerDivText {
+  vertical-align: middle;
+  display: inline-block;
+  height: 20px;
+}
+.footerDivIMG{
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.footerDivText {
+  line-height: 20px;
+  padding-left: 10px;
+  text-align: left;
+  width: 100px;
+  text-transform: uppercase;
+}
+/* _____________________________________________________________FOOTER */
+
+@media screen and (max-width: 770px) {
+.menuDiv {
+  line-height: 15px;
+  font-size: 10px;
+}
+.storyDiv {
+  display: block;
+}
+}
